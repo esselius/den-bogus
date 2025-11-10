@@ -8,6 +8,7 @@
     { pkgs, ... }:
     {
       users.users.tux.packages = [ pkgs.hello ];
+      boot.kernelPackages = pkgs.linuxPackages;
     };
 
   # rename "it works", evidently it has bugs
